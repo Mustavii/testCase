@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Responsive Grid</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+    }
+    body {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center; 
+		font-family: sans-serif;
+		margin: 2rem 0;
+		color: #FFF;
+	} 
+	.auto-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: 20px;
+	}
+	.auto-grid div {
+		background-color: #5B3838;
+		padding: 20px;
+		text-align: center;
+		border-radius: 5px ; 
+	}
+
+</style>
+</head>
+<body>
+	
+	<div class="auto-grid">
+		<div>Box</div>
+		<div>Box</div>
+		<div>Box</div>
+		<div>Box</div>
+		<div>Box</div>
+	</div>
+	
+</body>
+</html> <!-- Example 3: Responsive Grid using auto-fit -->

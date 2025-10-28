@@ -1,0 +1,65 @@
+<!-- Example 2: Grid with Named Areas -->
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid with Named Areas</title>
+<style>
+/* 	*{
+	margin: 0;
+	padding: 0;
+    }
+    body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+	font-family: sans-serif;
+	margin: 2rem 0;
+} 
+ */ 
+	body {
+		color: #FFF;
+	}
+	.grid-layout {
+		display: grid;
+		grid-template-areas:
+		"header header"
+		"sidebar content";
+		grid-template-columns: 1fr 3fr;
+		grid-template-rows: auto 1fr;
+		gap: 10px;
+	}
+	
+	
+    .header {
+		grid-area: header;
+		background-color: #49757E;
+		padding: 20px;
+		border-radius: 5px ; 
+	}
+    .sidebar {
+		grid-area: sidebar;
+		background-color: #68316B;
+		padding: 20px;
+		border-radius: 5px ; 
+	}
+    .content {
+		grid-area: content;
+		background-color: #476C47;
+		padding: 20px;
+		border-radius: 5px ; 
+	}
+	
+  </style>
+</head>
+<body>
+	
+	<div class="grid-layout">
+		<div class="header">Header</div>
+		<div class="sidebar">Content</div>
+		<div class="content">SideBar</div>
+	</div>
+	
+</body>
+</html>

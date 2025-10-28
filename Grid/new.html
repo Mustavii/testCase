@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>.</title>
+</head>
+<body>
+<style>
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center; 
+		font-family: sans-serif;
+		margin: 2rem 0;
+		height: 80vh;
+		background: #000;
+	} 
+	
+</style>
+</head>
+<body>
+
+	<section>
+		<div class="child_1">1</div>
+		<!-- <div class="child_2">2</div> -->
+		<div class="child_3">3</div>
+		<div class="child_4">4</div>
+		<div class="child_5">5</div>
+		<!-- <div class="child_6">6</div> -->
+		<!-- <div class="child_7">7</div> -->
+		<div class="child_8">8</div>
+		<div class="child_9">9</div>
+		<!-- <div class="child_10">10</div> -->
+		<!-- <div class="child_11">11</div> -->
+		<!-- <div class="child_12">12</div> -->
+		<div class="child_13">13</div>
+	</section>
+
+</body>
+</html>
+<style>
+	section div {
+		/* height: 100px; */
+		/* width: 100px; */
+		border-radius: 10px ; 
+		background: #FF6500;
+		display: grid;
+		place-content: center;
+		color: #FFF;
+		font-family: 'Marcellus';
+		font-size: 5rem;
+	}
+	@font-face {
+		font-family: 'Marcellus';
+		src: url('/Grid/Marcellus.ttf');
+	}
+	section {
+		padding: 1rem;
+		background: #FFFFFF;
+		border-radius: 10px ; 
+		display: grid;
+		grid-template-rows:	100px 100px 100px 100px/* repeat(3, 100px) */;
+		grid-template-columns: 10px 100px 150px 150px /* repeat(3, 100px) */ ;
+		grid-template-areas:
+		"	child		child		child_3		child_4	"
+		"	child_5		child_5		child_8		child_8	"
+		"	child_5		child_5		child_13	child_13	"
+		"	child_9		child_9		child_9		child_9	"
+		;
+		justify-content: space-evenly;
+		align-content: space-evenly;
+		align-items: space-evenly;
+		grid-gap: 10rem ;
+		grid-gap: 2rem 3rem;
+		/* width: 90%; */
+		/* height: 700px; */
+	}
+	
+/* 	{.child_$}*12
+{.child_${}}*12
+ */	
+	.child_1 {
+		grid-area: child;
+		background: #42445A;
+		/* height: 20rem; */
+	}
+	.child_2 {
+		grid-area: child_2;
+		background: #4B0000;
+	}
+	.child_3 {
+		grid-area: child_3;
+		background: #8A003D;
+	}
+	.child_4 {
+		grid-area: child_4;
+		background: #008296;
+	}
+	.child_5 {
+		grid-area: child_5;
+	}
+	.child_6 {
+		grid-area: child_6;
+	}
+	.child_7 {
+		grid-area: child_7;
+	}
+	.child_8 {
+		grid-area: child_8;
+		background: #00584F;
+	}
+	.child_9 {
+		grid-area: child_9;
+	}
+	.child_10 {
+		grid-area: child_10;
+	}
+	.child_11 {
+		grid-area: child_11;
+	}
+	.child_12 {
+		grid-area: child_12;
+	}
+	.child_13 {
+		grid-area: child_13;
+		background: #0065B2;
+	}
+</style>

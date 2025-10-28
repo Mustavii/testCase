@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Wraper</title>
+</head>
+<body>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center; 
+		font-family: sans-serif;
+		margin: 2rem 0;
+		height: 80vh;
+		background: #000;
+	} 
+</style>
+</head>
+<body>
+
+	<section>
+		<div class="child_1">Header</div>
+		<!-- <div class="child_2">2</div> -->
+		<!-- <div class="child_3">3</div> -->
+		<!-- <div class="child_4">4</div> -->
+		<div class="child_5">Nav</div>
+		<!-- <div class="child_6">6</div> -->
+		<!-- <div class="child_7">7</div> -->
+		<div class="child_8">Main</div>
+		<div class="child_9">
+			<h1>Footer</h1>
+			<article>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eos soluta suscipit veniam, dolores tempore reprehenderit. Dolores nemo eligendi dolor, ratione explicabo soluta numquam, quo in, exercitationem asperiores error consequatur, optio temporibus dolorem. Optio velit dolor excepturi dignissimos laboriosam veritatis error autem beatae quod molestiae, nihil ipsum, consequuntur tempore distinctio, maxime assumenda neque numquam sequi voluptatum animi amet, fuga at. Itaque sunt dolorum numquam facilis nam nulla aut natus rerum quasi soluta quaerat vitae hic ea repudiandae quibusdam molestiae nostrum, aperiam dolorem magnam quae. Sed cumque fugiat consequatur fuga quos officiis. Natus nulla rem quo ratione. Sapiente, exercitationem porro voluptatum.
+				</p>
+			</article>
+		</div>
+		<!-- <div class="child_10">10</div> -->
+		<!-- <div class="child_11">11</div> -->
+		<!-- <div class="child_12">12</div> -->
+		<div class="child_13">Article</div>
+	</section>
+
+</body>
+</html>
+<style>
+	section div {
+		border-radius: 10px ; 
+		background: #FF6500;
+		display: grid;
+		place-content: center;
+		color: #FFF;
+		font-family: 'Marcellus';
+		font-size: 2.5rem;
+	}
+	@font-face {
+		font-family: 'Marcellus';
+		src: url('/Grid/Marcellus.ttf');
+	}
+	section {
+		padding: 1rem;
+		background: #FFFFFF;
+		border-radius: 10px ; 
+		display: grid;
+		grid-template-rows:	100px 100px 100px auto/* repeat(3, 100px) */;
+		grid-template-columns: 10px 100px 150px 150px /* repeat(3, 100px) */ ;
+		grid-template-areas:
+		"	child		child		child		child	"
+		"	child_5		child_5		child_8		child_8	"
+		"	child_5		child_5		child_13	child_13	"
+		"	child_9		child_9		child_9		child_9	"
+		;
+		justify-content: space-evenly;
+		align-content: space-evenly;
+		align-items: space-evenly;
+		grid-gap: 10rem ;
+		grid-gap: 2rem 3rem;
+	}
+	
+	.child_1 {
+		grid-area: child;
+		background: #42445A;
+		/* height: 20rem; */
+	}
+	.child_2 {
+		grid-area: child_2;
+		background: #4B0000;
+	}
+	.child_3 {
+		grid-area: child_3;
+		background: #8A003D;
+	}
+	.child_4 {
+		grid-area: child_4;
+		background: #008296;
+	}
+	.child_5 {
+		grid-area: child_5;
+	}
+	.child_6 {
+		grid-area: child_6;
+	}
+	.child_7 {
+		grid-area: child_7;
+	}
+	.child_8 {
+		grid-area: child_8;
+		background: #00584F;
+	}
+	.child_9 {
+		grid-area: child_9;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center; 
+		background: #000000;
+	}
+	.child_9 h1 {
+		margin-top: 1rem;
+	}
+	.child_9 p {
+		margin: 1rem;
+		padding: 1rem;
+		line-height: 1.5;
+		font-weight: 380;
+		font-size: 2rem;
+		font-family: sans-serif;
+	}
+	.child_10 {
+		grid-area: child_10;
+	}
+	.child_11 {
+		grid-area: child_11;
+	}
+	.child_12 {
+		grid-area: child_12;
+	}
+	.child_13 {
+		grid-area: child_13;
+		background: #0065B2;
+	}
+</style>

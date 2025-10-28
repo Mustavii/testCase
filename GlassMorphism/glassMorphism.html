@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>.</title>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-family: sans-serif;
+		margin: 2rem 0;
+		background: #fff;
+	}
+	div {
+		background: #FFFFFF;
+		position: relative;
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center; 
+	}
+	img {
+	    width: 300px;
+	    mix-blend-mode: darken;
+	    border-radius: 1rem;	    /* clip-path: path(M 1rem,10px L 90px,10px Z); */
+	}
+	p {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		/* transform: rotate(-45deg); */
+		/* background-image: linear-gradient(45deg, rgba(255, 255, 255,.1),rgba(0, 0, 0,.2)); */
+		
+		padding: 1rem;
+		padding: .8rem;
+		box-shadow: 5px 5px 5px #000000AB, -3px -3px 5px #000000AB;
+		border-radius: 7px; 
+		
+		color: #fff;
+		font-size: 1.3rem;
+		font-family: 'Font';
+	}	
+	p{
+		background: transparent;
+		backdrop-filter: blur(2px);
+		background-image: linear-gradient(45deg, #000000,#00000000);
+		background-size: 10px 10px;
+	}
+	span {
+		padding: .7rem;
+		border-radius: 7px;
+		background: transparent;
+		backdrop-filter: blur(2px);
+		background-image: linear-gradient(45deg, #00000000,#FFFFFF59);
+		background-size: 10px 10px;
+		font-size: .8rem;
+		bottom: 0;
+	}
+	div:nth-child(2){
+		margin-top: .5rem;
+	}
+	@font-face {
+        font-family: 'Font';
+        src: url('/GlassMorphism/Raleway-Light.ttf');
+    }
+    
+</style>
+</head>
+<body>
+    
+    <div>
+        <img src="/GlassMorphism/images (7).jpeg" alt="">
+        <p>Hello World</p>
+    </div>
+    <div>
+        <img src="/glassMorPhism.jpg" alt="">
+    </div>
+    
+</body>
+</html>
